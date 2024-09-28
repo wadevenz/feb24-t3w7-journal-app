@@ -15,9 +15,9 @@ export function useJournalEntriesData(){
     console.log("Passing data around!");
 
     let currentJournalData = useContext(JournalEntriesDataContext);
-    if (currentJournalData.lenght == 0){
-        console.log("No entries to show!");
-    }
+        if (currentJournalData.length == 0){
+            console.log("No entries to show!");
+        }
 
     return currentJournalData;
 }
