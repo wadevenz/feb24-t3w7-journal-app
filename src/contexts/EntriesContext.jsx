@@ -1,4 +1,5 @@
 import { createContext, useState, useContext, useEffect } from "react";
+import { useLocalStorage } from "react-use";
 
 
 // Create the context
@@ -31,7 +32,14 @@ export function useJournalEntriesSetter(){
 export default function JournalEntriesProvider(props){
     let [journalEntries, setJournalEntries] = useState([]);
 
+    const [journalEntriesLocalStorage, setJournalEntriesLocalStorage] = useLocalStorage("supercooljournalapp-data", []);
+
     useEffect(() => {
+        // read from local storage and apply that to state
+    }, []);
+
+    useEffect(() => {
+        // write data into local storage
         console.log(journalEntries);
     }, [journalEntries]);
 
