@@ -19,11 +19,11 @@ export function useJournalEntriesData(){
         console.log("No entries to show!");
     }
 
-    return useContext(JournalEntriesDataContext);
+    return currentJournalData;
 }
 
 export function useJournalEntriesSetter(){
-    return useContext(JournalEntriesDataContext);
+    return useContext(JournalEntriesSetterContext);
 }
 
 // Create the context provider

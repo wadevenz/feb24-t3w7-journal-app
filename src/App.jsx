@@ -9,7 +9,7 @@ function App() {
 
   // const journalEntriesData = useContext(JournalEntriesContext);
   const journalEntriesData = useJournalEntriesData();
-  const useJournalEntriesSetter = useJournalEntriesSetter();  
+  const journalEntriesSetter = useJournalEntriesSetter();  
 
   return (
     <>
