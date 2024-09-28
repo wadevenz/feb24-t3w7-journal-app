@@ -32,3 +32,21 @@ localhost:3000/search/type/review
 
 }
 ```
+
+
+## Contexts
+
+- Journal Entries
+    - Array of objects
+
+```js
+{
+    id: "12345678",
+    type: "review",
+    name: "Example post name",
+    content: "Some cool content",
+    author: "Wade",
+    lastEdited: 12343455 // milliseconds since JS dates are stored as that internally
+
+}
+```
